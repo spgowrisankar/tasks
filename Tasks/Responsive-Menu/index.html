@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resesponsive menu</title>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-top">
+        <div class="container">
+          <nav class="utility-nav" id="utility-nav">
+            <form class="search-form" action="#" method="#" id="search-form">
+              <input type="search" name="search" value="" placeholder="Search...">
+              <button type="submit" class="search-submit" onsubmit="buttonClick()" name="button"></button>
+            </form>
+            <ul id="utility-menu" class="utility-menu">
+              <li class="menu-items">
+                <a class="menu-item-link" href="#">Home</a>
+              </li>
+              <li class="menu-items">
+                <a class="menu-item-link" href="#">About</a>
+              </li>
+              <li class="menu-items">
+                <a class="menu-item-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-nav" id="header-navbar">
+        <div class="container">
+          <div class="header-nav-cover">
+            <div class="main-header-logo">
+              <a class="main-logo-link" onclick="smoothScroll(document.body)">
+                <img src="./image/main-logo.svg" alt="main-logo-image">
+              </a>
+            </div>
+            <div class="header-menus">
+              <nav class="main-nav" id="main-nav">
+                <div class="main-menu-toggle">
+                  <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="part top-bun"></div>
+                    <div class="part meat"></div>
+                    <div class="part bottom-bun"></div>
+                  </div>
+                </div>
+                <div class="main-menu-wrapper">
+                  <ul id="main-menu" class="main-menu">
+                    <li class="main-menu-item">
+                      <a class="main-menu-link">
+                        Challenges
+                      </a>
+                      <button class="arrow-button" type="button" name="button" onclick="subMenu()">
+                        <span class="arrow"></span>
+                      </button>
+                      <div class="sub-menu-cover">
+                        <ul class="sub-menu" id="sub-menu">
+                          <li class="sub-menu-item">
+                            <a class="sub-menu-link " href="#">
+                              Home
+                            </a>
+                          </li>
+                          <li class="sub-menu-item">
+                            <a class="sub-menu-link" href="#">
+                              About
+                              <button class="arrow-button" type="button" name="button" onclick="sprMenu()">
+                                <span class="arrow"></span>
+                              </button>
+                            </a>
+
+                            <ul class="sub-menu-level-2">
+                              <li class="level-2-item">
+                                <a class="level-2-link" href="#">
+                                  Meet Team
+                                </a>
+                              </li>
+                              <li class="level-2-item">
+                                <a class="level-2-link" href="#">
+                                  About Us
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="sub-menu-item">
+                            <a class="sub-menu-link" href="#">
+                              Contact
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" >
+                        Products
+                      </a>
+                      <button class="arrow-button" type="button" name="button" onclick="megaMenu()">
+                        <span class="arrow"></span>
+                      </button>
+                        <div class="mega-menu-cover">
+                          <ul class="mega-menu-list">
+                            <li class="mega-list">
+                              <h3>Wholesale</h3>
+                              <ul class="mega-list-item">
+                                <li class="mega-list-item-link"><a href="#">Gifts</a></li>
+                                <li class="mega-list-item-link"><a href="#">Subscriptions</a></li>
+                                <li class="mega-list-item-link"><a href="#">Products</a></li>
+                              </ul>
+                            </li>
+                            <li class="mega-list">
+                              <h3>Help</h3>
+                              <ul class="mega-list-item">
+                                <li class="mega-list-item-link"><a href="#">Refer a friend</a></li>
+                                <li class="mega-list-item-link"><a href="#">Affiliate Program</a></li>
+                              </ul>
+                            </li>
+                            <li class="mega-list">
+                              <h3>Contact</h3>
+                              <ul class="mega-list-item">
+                                <li class="mega-list-item-link"><a href="#">Refer a friend</a></li>
+                                <li class="mega-list-item-link"><a href="#">Affiliate Program</a></li>
+                                <li class="mega-list-item-link"><a href="#">About Us</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <div class="mega-menu-cta">
+                            <h1>Offer Zone!!</h1>
+                            <p>Save 10% + Free Shipping</p>
+                            <a class="cta-button" href="#">Shop Now</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" id="main-menu-link" onclick="smoothScroll(document.getElementById('content_1'))" href="#content_1">
+                        Customers
+                      </a>
+                    </li>
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" id="main-menu-link" onclick="smoothScroll(document.getElementById('content_2'))" href="#content_2">
+                        Services
+                      </a>
+                    </li>
+                    <li class="main-menu-item">
+                      <a class="main-menu-link" id="main-menu-link" onclick="smoothScroll(document.getElementById('content_3'))" href="#content_3">
+                        Events
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner"></div>
+    <div class="content" id="content_1">
+      <h1>Content - 1</h1>
+      The word essay derives from the French infinitive essayer, "to try" or "to attempt". In English essay first meant "a trial" or "an attempt", and this is still an alternative meaning. The Frenchman Michel de Montaigne (1533–1592) was the first author to describe his work as essays; he used the term to characterize these as "attempts" to put his thoughts into writing.
+      Subsequently, essay has been defined in a variety of ways. One definition is a "prose composition with a focused subject of discussion" or a "long, systematic discourse".[2] It is difficult to define the genre into which essays fall. Aldous Huxley, a leading essayist, gives guidance on the subject.[3] He notes that "the essay is a literary device for saying almost everything about almost anything", and adds that "by tradition, almost by definition, the essay is a short piece". Furthermore, Huxley argues that "essays belong to a literary species whose extreme variability can be studied most effectively within a three-poled frame of reference". These three poles (or worlds in which the essay may exist) are:
+      The personal and the autobiographical: The essayists that feel most comfortable in this pole "write fragments of reflective autobiography and look at the world through the keyhole of anecdote and description".
+      The objective, the factual, and the concrete particular: The essayists that write from this pole "do not speak directly of themselves, but turn their attention outward to some literary or scientific or political theme. Their art consists of setting forth, passing judgment upon, and drawing general conclusions from the relevant data".
+      The abstract-universal: In this pole "we find those essayists who do their work in the world of high abstractions", who are never personal and who seldom mention the particular facts of experience.
+      The abstract-universal: In this pole "we find those essayists who do their work in the world of high abstractions", who are never personal and who seldom mention the particular facts of experience.
+      Huxley adds that the most satisfying essays "...make the best not of one, not of two, but of all the three worlds in which it is possible for the essay to exist.
+
+    </div>
+    <div class="content" id="content_2" >
+      <h1>Content - 2</h1>
+      The word essay derives from the French infinitive essayer, "to try" or "to attempt". In English essay first meant "a trial" or "an attempt", and this is still an alternative meaning. The Frenchman Michel de Montaigne (1533–1592) was the first author to describe his work as essays; he used the term to characterize these as "attempts" to put his thoughts into writing.
+
+      Subsequently, essay has been defined in a variety of ways. One definition is a "prose composition with a focused subject of discussion" or a "long, systematic discourse".[2] It is difficult to define the genre into which essays fall. Aldous Huxley, a leading essayist, gives guidance on the subject.[3] He notes that "the essay is a literary device for saying almost everything about almost anything", and adds that "by tradition, almost by definition, the essay is a short piece". Furthermore, Huxley argues that "essays belong to a literary species whose extreme variability can be studied most effectively within a three-poled frame of reference". These three poles (or worlds in which the essay may exist) are:
+
+      The personal and the autobiographical: The essayists that feel most comfortable in this pole "write fragments of reflective autobiography and look at the world through the keyhole of anecdote and description".
+      The objective, the factual, and the concrete particular: The essayists that write from this pole "do not speak directly of themselves, but turn their attention outward to some literary or scientific or political theme. Their art consists of setting forth, passing judgment upon, and drawing general conclusions from the relevant data".
+      The abstract-universal: In this pole "we find those essayists who do their work in the world of high abstractions", who are never personal and who seldom mention the particular facts of experience.
+
+      Huxley adds that the most satisfying essays "...make the best not of one, not of two, but of all the three worlds in which it is possible for the essay to exist.
+
+    </div>
+    <div class="content" id="content_3">
+      <h1>Content - 3</h1>
+      The word essay derives from the French infinitive essayer, "to try" or "to attempt". In English essay first meant "a trial" or "an attempt", and this is still an alternative meaning. The Frenchman Michel de Montaigne (1533–1592) was the first author to describe his work as essays; he used the term to characterize these as "attempts" to put his thoughts into writing.
+
+      Subsequently, essay has been defined in a variety of ways. One definition is a "prose composition with a focused subject of discussion" or a "long, systematic discourse".[2] It is difficult to define the genre into which essays fall. Aldous Huxley, a leading essayist, gives guidance on the subject.[3] He notes that "the essay is a literary device for saying almost everything about almost anything", and adds that "by tradition, almost by definition, the essay is a short piece". Furthermore, Huxley argues that "essays belong to a literary species whose extreme variability can be studied most effectively within a three-poled frame of reference". These three poles (or worlds in which the essay may exist) are:
+
+      The personal and the autobiographical: The essayists that feel most comfortable in this pole "write fragments of reflective autobiography and look at the world through the keyhole of anecdote and description".
+      The objective, the factual, and the concrete particular: The essayists that write from this pole "do not speak directly of themselves, but turn their attention outward to some literary or scientific or political theme. Their art consists of setting forth, passing judgment upon, and drawing general conclusions from the relevant data".
+      The abstract-universal: In this pole "we find those essayists who do their work in the world of high abstractions", who are never personal and who seldom mention the particular facts of experience.
+
+      Huxley adds that the most satisfying essays "...make the best not of one, not of two, but of all the three worlds in which it is possible for the essay to exist.
+
+    </div>
+    <div class="content " id="content_4">
+
+      <h1>Content - 1</h1>
+      The word essay derives from the French infinitive essayer, "to try" or "to attempt". In English essay first meant "a trial" or "an attempt", and this is still an alternative meaning. The Frenchman Michel de Montaigne (1533–1592) was the first author to describe his work as essays; he used the term to characterize these as "attempts" to put his thoughts into writing.
+
+      Subsequently, essay has been defined in a variety of ways. One definition is a "prose composition with a focused subject of discussion" or a "long, systematic discourse".[2] It is difficult to define the genre into which essays fall. Aldous Huxley, a leading essayist, gives guidance on the subject.[3] He notes that "the essay is a literary device for saying almost everything about almost anything", and adds that "by tradition, almost by definition, the essay is a short piece". Furthermore, Huxley argues that "essays belong to a literary species whose extreme variability can be studied most effectively within a three-poled frame of reference". These three poles (or worlds in which the essay may exist) are:
+
+      The personal and the autobiographical: The essayists that feel most comfortable in this pole "write fragments of reflective autobiography and look at the world through the keyhole of anecdote and description".
+      The objective, the factual, and the concrete particular: The essayists that write from this pole "do not speak directly of themselves, but turn their attention outward to some literary or scientific or political theme. Their art consists of setting forth, passing judgment upon, and drawing general conclusions from the relevant data".
+      The abstract-universal: In this pole "we find those essayists who do their work in the world of high abstractions", who are never personal and who seldom mention the particular facts of experience.
+
+      Huxley adds that the most satisfying essays "...make the best not of one, not of two, but of all the three worlds in which it is possible for the essay to exist.
+    </div>
+
+  <script src="./main.js"></script>
+  </body>
+</html>

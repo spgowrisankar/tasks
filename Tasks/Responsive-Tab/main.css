@@ -1,0 +1,85 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.tabs {
+  width: 100%;
+}
+.tab-wrapper {
+  margin: 50px auto;
+  text-align: center;
+
+}
+
+.tabs .tab-section {
+  display: flex;
+  flex-flow: column;
+  background: #fbfbfb;
+  margin-bottom: 25px;
+}
+.tabs .tab-section li {
+  padding: 10px;
+}
+.tabs .tab-section .content-head {
+  width: 250px;
+  font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: #3b3b3b;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.tabs .tab-section .de-active {
+  color: #3b3b3b;
+  background: none;
+}
+.tabs .tab-section .content-head:hover,
+.tabs .tab-section .active {
+  background-color: #e8f5f1;
+  color: #028f68;
+}
+.tabs .tab-section .de-active {
+  color: #3b3b3b;
+  background: none;
+}
+.content{
+  padding: 10px;
+}
+.tab-content p{
+  display: none;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.mob-content p{
+  display: block;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+#content-block {
+  display: none;
+}
+
+@media screen and (min-width: 600px){
+  .tab-content p {
+    display: block;
+    padding: 20px;
+  }
+  .mob-content p{
+    display: none;
+  }
+  .tab-wrapper {
+    width: 50%
+  }
+  .tabs .tab-section {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  #content-block {
+    display: none;
+  }
+}
