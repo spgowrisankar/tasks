@@ -1,0 +1,27 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+}
+.fieldset {
+  margin: 15px;
+}
+.form-control {
+  padding: 10px;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form-control input{
+  display: block;
+}
+.select-selected {
+  background-color: DodgerBlue;
+}

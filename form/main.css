@@ -1,0 +1,28 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  margin: 10px;
+}
+.fieldset {
+  margin: 15px;
+}
+.form-control {
+  padding: 10px;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form-control input,
+.form-control textarea{
+  display: block;
+}
+.check input{
+  display: inline;
+}
+.error {
+  color: #FF0000;
+}

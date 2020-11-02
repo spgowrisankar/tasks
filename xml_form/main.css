@@ -1,0 +1,14 @@
+.form-control {
+  padding: 10px;
+}
+label {
+  display: block;
+}
+.error {
+  display: block;
+  padding-top: 10px;
+  color: #ff0000;
+}
+.add {
+  text-decoration: none;
+}
